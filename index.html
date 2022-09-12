@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Интерактив</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: rgba(136, 243, 172, 0.943);
+                transition: all 0.25s;
+            }
+            
+            div {
+                text-align: center;
+            }
+
+            button {
+                border: 1px solid black;
+                padding: 15px 20px;
+                border-radius: 20px;
+                background: transparent;
+                cursor: pointer;
+                outline: none;
+            }
+
+            h1,h3 {
+                animation: down 2s;
+            }
+
+            @keyframes down {
+                from {
+                    transform: translateY(-50px);
+                }
+                to {
+                    translateY: (0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+       <div>
+        <h3>Привет, Олеся</h3>
+        <H1>Сейчас 12:12:12</H1>
+        <button>Сменить фон</button>
+       </div> 
+    <script src="app.js"></script>
+    </body>
+</html>
